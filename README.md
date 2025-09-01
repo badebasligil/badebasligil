@@ -1,5 +1,6 @@
 
-![Bade Başlıgil](IMG_7788.JPG) 
+![Bade Başlıgil]
+<img src="IMG_7788.JPG" width="300">
 
 # GitHub Pages
 
