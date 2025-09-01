@@ -2,6 +2,6 @@
 
 # Github Pages
 
-Github pages denemesi
+Bu projeyi yapmamın nedeni CSP ödevi olması
 
 # Bade Başlıgil Hisar CSp
