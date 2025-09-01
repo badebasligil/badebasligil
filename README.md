@@ -1,6 +1,5 @@
-<span style="display:inline-block; width:70;">
+
 ![Bade Başlıgil](IMG_7788.JPG) 
-</span>
 
 # GitHub Pages
 
