@@ -1,4 +1,6 @@
-#![Bade Başlıgil](IMG_7788.JPG) 
+<span style="display:inline-block; width:300px;">
+![Bade Başlıgil](IMG_7788.JPG) 
+</span>
 
 # GitHub Pages
 
