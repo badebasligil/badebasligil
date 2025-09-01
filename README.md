@@ -1,4 +1,4 @@
-#![Bade Başlıgil](IMG_7788.JPG width="70" height="30")
+#![Bade Başlıgil](IMG_7788.JPG) style = width:70, height:50
 
 # GitHub Pages
 
