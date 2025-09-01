@@ -1,4 +1,4 @@
-#![Bade Başlıgil](assets/profil.png)
+#![Bade Başlıgil](IMG_7788.JPG)
 
 # GitHub Pages
 
