@@ -1,6 +1,6 @@
 
-![Bade Başlıgil]
 <img src="IMG_7788.JPG" width="300">
+![Bade Basligil](assets/profil.png)
 
 # GitHub Pages
 
