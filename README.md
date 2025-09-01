@@ -1,7 +1,7 @@
 #![Bade Başlıgil](assets/profil.png)
 
-# Github Pages
+## GitHub Pages
 
-Bu projeyi yapmamın nedeni CSP ödevi olması
+GitHub Pages, yazılım geliştiricilere ve içerik üreticilerine projelerini tanıtma, belgelerini paylaşma ve kişisel portfolyolarını yayınlamaları imkanı sunan ücretsiz ve güçlü bir platformdur.
 
 # Bade Başlıgil Hisar CSp
