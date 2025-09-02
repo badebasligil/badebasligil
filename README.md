@@ -12,15 +12,16 @@ GitHub Pages, yazılım geliştiricilere ve içerik üreticilerine projelerini t
 
 <br>
 
-# [Projects:](https://github.com/badebasligil/badebasligil/tree/main/Project)
+# **[Projects:](https://github.com/badebasligil/badebasligil/tree/main/Project)**
 
 <br>
 
 ### [Swift Playground](https://github.com/badebasligil/badebasligil/tree/main/Project/Swift_Playground)
 
-<br>
+- *A basic Tic-Tac-Toe game*
+
 
 ### [Scratch - Tic Tac Toe](https://github.com/badebasligil/badebasligil/tree/main/Project/Block_Coding)
 
-
+- *A bunch of colorful boxes, some marked with X some with O*
 
