@@ -26,6 +26,7 @@ GitHub Pages is a free and powerful platform that allows software developers and
 
 - *A basic Tic-Tac-Toe game*
 
+ <img src="Screenshot 2025-09-03 at 02.32.25.png" width="300"> 
 <br>
 
 # **[Resources:](https://github.com/badebasligil/badebasligil/tree/main/Project_Resources)**
