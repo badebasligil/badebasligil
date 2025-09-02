@@ -12,9 +12,9 @@ GitHub Pages, yazılım geliştiricilere ve içerik üreticilerine projelerini t
 
 <br>
 
-#Projects:
+# Projects:
 
 <br>
-
+### [Scratch - Tic-Tac-Toe](https://github.com/badebasligil/badebasligil/tree/main/Block_Coding)
 ### [Swift Playground](https://github.com/badebasligil/badebasligil/tree/main/Swift_Projects)
 
