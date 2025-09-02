@@ -24,6 +24,6 @@ GitHub Pages, yazılım geliştiricilere ve içerik üreticilerine projelerini t
 
 - *A basic Tic-Tac-Toe game*
 
-# **[Resources:](https://github.com/badebasligil/badebasligil/tree/main/Project_Resources)
+# **[Resources:](https://github.com/badebasligil/badebasligil/tree/main/Project_Resources)**
 
 <br>
