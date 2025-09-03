@@ -27,3 +27,9 @@
  <img src="Screenshot 2025-09-03 at 02.32.25.png" width="700"> 
  
 <br>
+
+# **[Practice Projects](https://github.com/badebasligil/badebasligil/tree/main/Project/Practice_Swift_Playground_Projects)**
+
+###[Menu-Bill](https://github.com/badebasligil/badebasligil/blob/main/Project/Practice_Swift_Playground_Projects/Menu-Bill)
+
+- *A code that gives the cost of a bill of an order*
