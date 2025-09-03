@@ -1,0 +1,33 @@
+//Zeynep Bade Başlıgil - 3.09.25 - AP CSP
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        let ham = 60
+        let numh = 2
+        let pat = 25
+        let nump = 1
+        let drink = 15
+        let numd = 2
+        let sum = numh*ham + pat*nump + drink*numd
+        let sumh = ham*numh
+        let sump = pat*nump
+        let sumd = drink*numd
+        VStack {
+    Text("Menü Hesabı")
+                .font(.largeTitle)
+                 .bold()
+                .padding()
+            Text("Hamburger: \(ham) x \(numh) = \(sumh)")
+            Text("Patates: \(pat) x \(nump) = \(sump)")
+            Text("İçecek: \(drink) x \(numd) = \(sumd)")
+            Text("Toplam:\(sum) TL")
+                .font(.subheadline)
+                .foregroundStyle(.blue)
+                .bold()
+                .padding()
+            
+        }
+    }
+}
+
