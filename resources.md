@@ -1,4 +1,4 @@
-[home](https://badebasligil.github.io/badebasligil/) | [projects]() | [big ideas]() | [resources]()
+[home](https://badebasligil.github.io/badebasligil/) | [projects](project.md) | [big ideas]() | [resources]()
 
 # **[Resources:](https://github.com/badebasligil/badebasligil/tree/main/Project_Resources)**
 
