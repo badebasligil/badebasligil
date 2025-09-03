@@ -1,6 +1,6 @@
-# **![Bade Basligil]()**
+[home](https://badebasligil.github.io/badebasligil/) | [projects](project.md)
 
-[home](https://badebasligil.github.io/badebasligil/) | [projects]()
+# **![Bade Basligil]()**
 
 ## **GitHub Pages**
 
