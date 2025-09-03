@@ -1,0 +1,128 @@
+// Zeynep Bade Başlıgil, 3 September 2025, AP CSP, Calculator
+import SwiftUI
+struct ContentView: View {
+    @State private var number1: String = ""
+    //the reason @State is used is to create connections between the interface (what the users see on the screen) and the data
+    @State private var number2: String = ""
+    //number1 and nuber2 respresent two numbers to be revieved by the user
+    @State private var result: String = ""
+    //the reason it's in 'string' form is because the user enters them through text
+    //the result one holds the calculations result and is updated according the users input
+    
+    var body: some View {
+        VStack(spacing: 20) {
+            //stacking everything vertically
+            //the spacing is used to determine the spaces between components in the Stack
+            Text("Hesap Makinesi")
+                .font(.largeTitle)
+                .bold()
+            
+            TextField("Birinci sayı", text: $number1)
+            //Textfield allows the user to put input into this part 
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .keyboardType(.decimalPad)
+            //this allows entering onky numbers and decimal characters and no letters
+                .bold()
+            
+            TextField("İkinci sayı", text: $number2)
+            //"$number2" provides bidirectional (data that is transfered in both directions) flow between the variable and this field
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .keyboardType(.decimalPad)
+                .bold()
+            
+            HStack(spacing: 10) {
+                Button(action: addNumbers) {
+                    Text("+")
+                        .frame(width: 50, height: 50)
+                        .background(Color.teal)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                        .bold()
+                    //this and the following buttons are added for the user to choose and action
+                }
+                
+                Button(action: subtractNumbers) {
+                    Text("-")
+                        .frame(width: 50, height: 50)
+                        .background(Color.orange)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                        .bold()
+                }
+                
+                Button(action: multiplyNumbers) {
+                    Text("x")
+                        .frame(width: 50, height: 50)
+                        .background(Color.pink)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                        .bold()
+                }
+                
+                Button(action: divideNumbers) {
+                    Text("/")
+                        .frame(width: 50, height: 50)
+                        .background(Color.purple)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                        .bold()
+                }
+            }
+            
+            Text("Sonuç: \(result)")
+                .font(.title)
+                .padding()
+                .bold()
+            
+            Spacer()
+        }
+        .padding()
+    }
+    
+    
+    func addNumbers() {
+        if let num1 = Double(number1), let num2 = Double(number2) {
+            result = "\(num1 + num2)"
+        } else {
+            result = "Geçersiz giriş"
+        }
+    }
+    
+    //Double: it is used to express numbers as decimals (like 3.2), it is used to convert values enteres as text named number1 and number2 into numbers
+    //if let: this code checks if the entered input is a valid number or not, if it is it performs the calculations if not it gives and error message
+    //result: stores the results of the calculations
+    
+    func subtractNumbers() {
+        if let num1 = Double(number1), let num2 = Double(number2) {
+            result = "\(num1 - num2)"
+        } else {
+            result = "Geçersiz giriş"
+        }
+    }
+    
+    func multiplyNumbers() {
+        if let num1 = Double(number1), let num2 = Double(number2) {
+            result = "\(num1 * num2)"
+        } else {
+            result = "Geçersiz giriş"
+        }
+    }
+    
+    func divideNumbers() {
+        if let num1 = Double(number1), let num2 = Double(number2), num2 != 0 {
+            result = "\(num1 / num2)"
+        } else if let _ = Double(number1), let _ = Double(number2), Double(number2) == 0 {
+            result = "0'a bölünemez"
+        } else {
+            result = "Geçersiz giriş"
+        }
+    }
+}
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+//ContentView_Previews: A structure (template) for previewing the design.
+//PreviewProvider: Determines how to display the design to Xcode.
+//previews: Specifies which screen to preview. ContentView is selected here.
