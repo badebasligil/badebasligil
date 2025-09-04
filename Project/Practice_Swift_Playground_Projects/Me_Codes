@@ -1,0 +1,154 @@
+//Zeynep Bade Başlıgil - 4.9.25 - AP CSP - Creating myself with codes
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        ZStack {
+            Color.black
+            
+            Capsule()
+            //hair
+                .frame(width:500,height:900)
+                .offset(x:0,y:150)
+                .foregroundStyle(Color(CGColor(red:0.6, green: 0.4,blue:0.3,alpha:1.0)))
+                .foregroundStyle(Color(hue:0.6,saturation:0.5,brightness:9.0))
+            Circle()
+            //hair
+                .frame(width:500,height:900)
+                .offset(x:50,y:350)
+                .foregroundStyle(Color(CGColor(red:0.6, green: 0.4,blue:0.3,alpha:1.0)))
+                .foregroundStyle(Color(hue:0.6,saturation:0.5,brightness:9.0))
+            Circle()
+            //hair
+                .frame(width:500,height:900)
+                .offset(x:-50,y:350)
+                .foregroundStyle(Color(CGColor(red:0.6, green: 0.4,blue:0.3,alpha:1.0)))
+                .foregroundStyle(Color(hue:0.6,saturation:0.5,brightness:9.0))
+            Circle()
+            //hair
+                .frame(width:500,height:900)
+                .offset(x:40,y:100)
+                .foregroundStyle(Color(CGColor(red:0.6, green: 0.4,blue:0.3,alpha:1.0)))
+                .foregroundStyle(Color(hue:0.6,saturation:0.5,brightness:9.0))
+            Circle()
+            //hair
+                .frame(width:500,height:900)
+                .offset(x:-40,y:100)
+                .foregroundStyle(Color(CGColor(red:0.6, green: 0.4,blue:0.3,alpha:1.0)))
+                .foregroundStyle(Color(hue:0.6,saturation:0.5,brightness:9.0))
+            Rectangle()
+            //neck
+                .foregroundStyle(Color(CGColor(red:0.9, green: 0.7,blue:0.6,alpha:1.0)))
+                .frame(width:150, height:500)
+                .foregroundStyle(Color(hue:0.5,saturation:0.5,brightness:7.0))
+                .offset(y:400)
+            RoundedRectangle(cornerRadius: 100.0)
+            //shirt
+                .foregroundStyle(.mint)
+                .frame(width: 550, height: 300)
+                .offset(y:480)
+            Capsule()
+            //face
+                 .foregroundStyle(Color(CGColor(red:0.9, green: 0.7,blue:0.6,alpha:1.0)))
+                .frame(width:350, height:500)
+                .foregroundStyle(Color(hue:0.5,saturation:0.5,brightness:7.0))
+                .shadow(radius: 3)
+            Capsule()
+            //hair
+            .trim(from:0.0,to:0.5)
+                .frame(width:300,height:200)
+                .offset(x: -40,y:-230)
+                .foregroundStyle(Color(CGColor(red:0.6, green: 0.4,blue:0.3,alpha:1.0)))
+                .foregroundStyle(Color(hue:0.6,saturation:0.5,brightness:9.0))
+                 .rotationEffect(.degrees(45))
+            Rectangle()
+            //arm
+                .frame(width: 10, height: 70)
+                .opacity(0.4)
+                .offset(x:170, y:480)
+            Rectangle()
+            //arm
+                .frame(width: 10, height: 70)
+                .opacity(0.4)
+                .offset(x:-170, y:480)
+            Capsule()
+            //hair
+                .trim(from:0.5,to:1.0)
+                .frame(width:300,height:200)
+                .offset(x: -30,y:235)
+                .foregroundStyle(Color(CGColor(red:0.6, green: 0.4,blue:0.3,alpha:1.0)))
+                .foregroundStyle(Color(hue:0.6,saturation:0.5,brightness:9.0))
+                .rotationEffect(.degrees(140))
+            Capsule()
+            //cheeck
+                .foregroundStyle(.pink)
+                .opacity(0.05)
+                .offset(x: -50, y:-100)
+                .frame(width:90, height: 120)
+                .rotationEffect(.degrees(-80))
+            Capsule()
+            //cheeck
+                .foregroundStyle(.pink)
+                .opacity(0.05)
+                .offset(x: 50, y:-100)
+                .frame(width:90, height: 120)
+                .rotationEffect(.degrees(80))
+            Image(systemName: "list.bullet.indent")
+            //lashes
+                .rotationEffect(.degrees(-45))
+                .frame(width:200,height:200)
+                .offset(x:125, y: -40)
+            Image(systemName: "list.bullet.indent")
+            //lashes
+                .rotationEffect(.degrees(-45))
+                .scaleEffect(x: -1, y: 1)
+                .frame(width:200,height:200)
+                .offset(x:-125, y: -40)
+            Text("l")
+            //nose
+                .bold()
+                .offset(x:0,y:50)
+                .rotationEffect(.degrees(-45))
+            Text("I")
+            //nose
+                .bold()
+                .offset(x:-60,y:-20)
+                .rotationEffect(.degrees(-145))
+            Ellipse()
+            //eye
+                .foregroundStyle(.white)
+                .frame(width:80,height:50)
+                .offset(x:90, y: -20)
+            Ellipse()
+            //eye
+                .foregroundStyle(.white)
+                .frame(width:80,height:50)
+                .offset(x:-90, y: -20)
+            Capsule()
+            //eye
+                .foregroundStyle(.green)
+                .frame(width:50,height:40)
+                .offset(x:-90, y: -25)
+            Capsule()
+            //eye
+                .foregroundStyle(.green)
+                .frame(width:50,height:40)
+                .offset(x:90, y: -25)
+            Circle()
+            //mouth
+                .trim(from:0.0,to:0.5)
+                .foregroundStyle(.red)
+                .frame(width:95,height:90)
+                .offset(x:0, y: 115)
+                .opacity(0.6)
+            Capsule()
+            //tongue
+                .trim(from:0.0,to:0.5)
+                .foregroundStyle(.red)
+                .frame(width:45,height:100)
+                .offset(x:0, y: 135)
+            
+               
+        }
+    }
+}
