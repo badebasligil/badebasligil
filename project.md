@@ -38,6 +38,6 @@
 
 - *A version of me created by codes*
 
-- **[The Codes]**(https://github.com/badebasligil/badebasligil/blob/main/Project/Practice_Swift_Playground_Projects/Me_Codes)
+- **[The Codes](https://github.com/badebasligil/badebasligil/blob/main/Project/Practice_Swift_Playground_Projects/Me_Codes)**
 
   <img src="Screenshot 2025-09-04 at 14.50.11.png" width="700"> 
