@@ -33,3 +33,11 @@
 ### [Menu-Bill](https://github.com/badebasligil/badebasligil/blob/main/Project/Practice_Swift_Playground_Projects/Menu-Bill)
 
 - *A code that gives the cost of a bill of an order*
+
+### [Me - Created by codes](https://github.com/badebasligil/badebasligil/blob/main/Project/Practice_Swift_Playground_Projects/My%20App%20copy%204.swiftpm.zip)
+
+- *A version of me created by codes*
+
+- **[The Codes]**(https://github.com/badebasligil/badebasligil/blob/main/Project/Practice_Swift_Playground_Projects/Me_Codes)
+
+  <img src="Screenshot 2025-09-04 at 14.50.11.png" width="700"> 
