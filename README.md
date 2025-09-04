@@ -10,6 +10,6 @@ GitHub Pages is a free and powerful platform that allows software developers and
 
 ### **Bade Başlıgil Hisar CSP**
 
-<img src="IMG_7788.JPG" width="300">
+<img src="sedat.yalcin" width="300">
 
 <br>
