@@ -5,7 +5,10 @@ struct ContentView: View {
     @State private var angle: Double = 0
     @State private var tapCount: Int = 0
     @State var hour: Int = 0
+    @State var AM: Int = 0
+    @State var PM: Int = 0
     @State var minuteSeg: Int = 0
+    
     
     var isNight: Bool {
 
@@ -14,7 +17,7 @@ struct ContentView: View {
     }
     
     var body: some View {
-        let Sedat = isNight ? Color.yellow : Color.indigo.opacity(0.2)
+        let Sedat = isNight ? Color.yellow : Color.indigo.opacity(0.8)
         
         let Yalcin = isNight ? Text("AM") : Text("PM")
         
@@ -26,12 +29,28 @@ struct ContentView: View {
                 .offset(y:280)
                 .font(.title)
                 .bold()
+                .hidden()
             
             Text("Hour: \(hour)")
                 .font(.title)
                 .foregroundColor(.white)
                 .offset(y: -280)
                 .bold()
+            
+            if Sedat == Color.yellow {
+                Text("AM: \(AM)")
+                    .font(.title)
+                    .foregroundColor(.white)
+                    .offset(y: 280)
+                    .bold()
+            } else {
+                Text("PM: \(PM)")
+                    .font(.title)
+                    .foregroundColor(.white)
+                    .offset(y: 280)
+                    .bold()
+            }
+            
             
             Circle()
                 .fill(Color.black)
@@ -56,7 +75,12 @@ struct ContentView: View {
             tapCount += 1
             hour += 1
             if hour == 24 { hour = 0 }
+            AM += 1
+            if AM == 12 { AM = 0 }
+            PM += 1
+            if PM == 12 { PM = 0 }
         }
         .animation(.bouncy(duration: 0.5, extraBounce: 0.5), value: angle)
     }
 }
+
