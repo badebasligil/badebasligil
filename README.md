@@ -1,4 +1,4 @@
-**[home](https://badebasligil.github.io/badebasligil/)** | **[projects](project.md)** | **[big ideas](big_ideas.md)** | **[resources](resources.md)**
+<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/9ccac41b-b3bc-4188-a6a4-3647e13ce347" />**[home](https://badebasligil.github.io/badebasligil/)** | **[projects](project.md)** | **[big ideas](big_ideas.md)** | **[resources](resources.md)**
 
 # **![Bade Basligil]()**
 
@@ -10,6 +10,8 @@ GitHub Pages is a free and powerful platform that allows software developers and
 
 ### **Bade Başlıgil Hisar CSP, Idealab**
 
+
+<img src="idealab.png" width="350">
 
 ## **My Mentor**
 
