@@ -13,7 +13,7 @@ GitHub Pages is a free and powerful platform that allows software developers and
 
 ## **My Mentor**
 
-<img src="hocaaammmmmm" width="500">
+<img src="hocaaammmmmm.jpeg" width="500">
 
 <br>
 
