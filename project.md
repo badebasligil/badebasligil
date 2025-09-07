@@ -25,6 +25,14 @@
 - *A basic Tic-Tac-Toe game*
 
  <img src="Screenshot 2025-09-03 at 02.32.25.png" width="700"> 
+
+### **[Clock-Version 2](https://github.com/badebasligil/badebasligil/blob/main/Project/Swift_Playground/Clock%20-%20Updated.swiftpm.zip)**
+
+- *A clock app that changes the hour and/or the minute once the screen or buttons are clicked, shows the hour and minutes and determines wether it is AM or PM*
+
+- *[The Codes](https://github.com/badebasligil/badebasligil/blob/main/Project/Swift_Playground/Clock_Updated_Codes)*
+
+<img src="clockiclocklock.png" width="700"> 
  
 <br>
 
