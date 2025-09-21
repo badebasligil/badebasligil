@@ -42,6 +42,20 @@
 - *[The Codes](https://github.com/badebasligil/badebasligil/blob/main/Project/Swift_Playground/clock_v3_codes)*
 
 <img src="Screenshot 2025-09-22 at 00.23.55.png" width="700"> 
+
+<img src="Screenshot 2025-09-22 at 00.33.32.png" width="500"> 
+
+<img src="Screenshot 2025-09-22 at 00.41.27.png" width="500"> 
+
+- *Target Audience: ages 2-8*
+
+- *Why?: because there are many different designs out there for kids at that age but none actually represent the mood of the hours in a friendly way. *
+
+- *How do your design choices support this audience?: for instance, once the clock hits 8 PM the bear starts to sleep representing 'sleep time' for the kids, during the morning it wakes up, etc.*
+
+- *How did research (FigJam) influence your design?: me and my partner didn't know what kind of design to do on the clock to make it more appealing to kids, the research (Figjam) helped us decide on that.*
+
+- *What was the most challenging part of coding?: coding the costume changes depending on the time was the hardest part*
  
 <br>
 
