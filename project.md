@@ -33,6 +33,15 @@
 - *[The Codes](https://github.com/badebasligil/badebasligil/blob/main/Project/Swift_Playground/Clock_Updated_Codes)*
 
 <img src="clockiclocklock.png" width="700"> 
+
+
+### **[Clock-Version 3](https://github.com/badebasligil/badebasligil/blob/main/Project/Clock%20v3.swiftpm.zip)**
+
+- *A clock app that changes the hour and/or the minute once the screen or buttons are clicked, shows the hour and minutes and determines wether it is AM or PM, the clock is also shaped like a bear and the pose of the bear changes according to the hours of the day*
+
+- *[The Codes](https://github.com/badebasligil/badebasligil/blob/main/Project/Swift_Playground/clock_v3_codes)*
+
+<img src="Screenshot 2025-09-22 at 00.23.55.png" width="700"> 
  
 <br>
 
