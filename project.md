@@ -47,9 +47,11 @@
 
 <img src="Screenshot 2025-09-22 at 00.41.27.png" width="500"> 
 
+* https://drive.google.com/drive/folders/1BOemroFw7UygbUy6W5WKSnsG5aAJTx2A *
+
 - *Target Audience: ages 2-8*
 
-- *Why?: because there are many different designs out there for kids at that age but none actually represent the mood of the hours in a friendly way. *
+- * Why?: because there are many different designs out there for kids at that age but none actually represent the mood of the hours in a friendly way. *
 
 - *How do your design choices support this audience?: for instance, once the clock hits 8 PM the bear starts to sleep representing 'sleep time' for the kids, during the morning it wakes up, etc.*
 
