@@ -4,7 +4,7 @@
 
 ### **Score:** 17/21
 
-<img src="" width="">
+<img src="Screenshot 2025-10-11 at 17.00.24.png" width="800">
 
 ### ***Success Rate Per Unit*** : 
 
