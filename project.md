@@ -82,6 +82,17 @@
 - **How does the cone show abstraction?** The cone is a simple shape that represents a real ice cream cone
   
 - **What did you learn about binary & compression?** I learned that computers use 1s and 0s to store data and make it simpler
+
+  ### **[Clock with Escape Game](Project/Swift_Playground/clock-v?.swiftpm.zip)**
+
+- *An escape game integrated with a timer and maze system.*
+
+- *[The Codes](https://github.com/badebasligil/badebasligil/blob/main/Project/Swift_Playground/clockv%3F_codes)*
+
+<img src="Screenshot 2025-10-19 at 15.44.21.png" width="700"> 
+
+<img src="Screenshot 2025-10-19 at 15.44.29.png" width="300"> 
+
  
 <br>
 
