@@ -1,0 +1,168 @@
+import SwiftUI
+
+// MARK: - Maze layout
+let maze = [
+    [0, 1, 0, 0, 0],
+    [0, 1, 0, 1, 0],
+    [0, 0, 0, 1, 0],
+    [1, 1, 0, 1, 0],
+    [0, 0, 0, 0, 0]
+]
+
+let startPosition = (x: 0, y: 0)
+let goalPosition = (x: 4, y: 4)
+
+// MARK: - ContentView
+struct ContentView: View {
+    // Maze bear position
+    @State private var bearPosition = startPosition
+    
+    // Timer
+    @State private var timeRemaining: Int = 20
+    @State private var running = false
+    
+    // Messages
+    @State private var message = ""
+    
+    // Timer publisher
+    let tick = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    
+    // Initial time
+    let totalTime = 20
+    
+    var body: some View {
+        VStack(spacing: 20) {
+            
+            // Clock-style timer
+            ZStack {
+                Circle()
+                    .stroke(lineWidth: 6)
+                    .foregroundColor(.gray.opacity(0.3))
+                    .frame(width: 120, height: 120)
+                
+                // Rotating hand
+                Rectangle()
+                    .fill(Color.red)
+                    .frame(width: 3, height: 50)
+                    .offset(y: -25)
+                    .rotationEffect(.degrees(handAngle()))
+                    .animation(.linear(duration: 0.2), value: timeRemaining)
+                
+                Text("\(timeRemaining)s")
+                    .foregroundColor(.white)
+                    .bold()
+            }
+            
+            // Maze grid
+            ForEach(0..<maze.count, id: \.self) { row in
+                HStack(spacing: 20) {
+                    ForEach(0..<maze[row].count, id: \.self) { col in
+                        ZStack {
+                            Rectangle()
+                                .fill(maze[row][col] == 1 ? Color.pink : Color.white)
+                                .frame(width: 50, height: 50)
+                                .border(Color.gray)
+                            
+                            if bearPosition.x == col && bearPosition.y == row {
+                                ActiveBear()
+                                    .frame(width: 40, height: 40)
+                            }
+                            
+                            if startPosition.x == col && startPosition.y == row {
+                                Text("🚩").font(.system(size: 30))
+                            }
+                            
+                            if goalPosition.x == col && goalPosition.y == row {
+                                Text("🏁").font(.system(size: 30))
+                            }
+                        }
+                    }
+                }
+            }
+            
+            // Arrow controls
+            HStack(spacing: 20) {
+                Button("⬅️") { moveBear(dx: -1, dy: 0) }
+                VStack(spacing: 20) {
+                    Button("⬆️") { moveBear(dx: 0, dy: -1) }
+                    Button("⬇️") { moveBear(dx: 0, dy: 1) }
+                }
+                Button("➡️") { moveBear(dx: 1, dy: 0) }
+            }
+            
+            // Message
+            Text(message).font(.title).foregroundColor(.blue)
+            
+            // Start/Reset
+            Button(running ? "Restart" : "Start Timer") {
+                startTimer()
+            }
+            .padding()
+            .background(Color.green.opacity(0.7))
+            .cornerRadius(10)
+        }
+        .padding()
+        .background(Color.black.opacity(0.8))
+        .onReceive(tick) { _ in
+            guard running else { return }
+            if timeRemaining > 0 {
+                timeRemaining -= 1
+            } else {
+                message = "⏰ You're out of time!"
+                running = false
+            }
+        }
+    }
+    
+    // MARK: - Movement
+    func moveBear(dx: Int, dy: Int) {
+        guard running else { return }
+        let newX = bearPosition.x + dx
+        let newY = bearPosition.y + dy
+        
+        if newY >= 0, newY < maze.count,
+           newX >= 0, newX < maze[0].count {
+            
+            if maze[newY][newX] == 1 {
+                message = "Overflow!"
+            } else {
+                bearPosition = (x: newX, y: newY)
+                message = ""
+                
+                if bearPosition == goalPosition {
+                    message = "🎉 Congrats! You reached the goal!"
+                    running = false
+                }
+            }
+        }
+    }
+    
+    // MARK: - Timer
+    func startTimer() {
+        bearPosition = startPosition
+        timeRemaining = totalTime
+        message = ""
+        running = true
+    }
+    
+    // Calculate rotation for the clock hand
+    func handAngle() -> Double {
+        let fraction = Double(timeRemaining) / Double(totalTime)
+        return (1 - fraction) * 360 - 90 // -90 to start at top
+    }
+}
+
+// MARK: - Bear Art
+struct ActiveBear: View {
+    var body: some View {
+        ZStack {
+            Capsule().fill(Color.brown).frame(width:40, height:40)
+            Circle().fill(Color.black).frame(width:25,height:25)
+        }
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
