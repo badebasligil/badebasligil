@@ -95,10 +95,10 @@
 
 - *An Ice Cream app that teaches binary and decimal numbers through scoops and overflows*
 
-- *[The Codes](Project/Swift_Playground/IceCrem_Codes)*
+- *[The Codes]([Project/Swift_Playground/IceCrem_Codes](https://github.com/badebasligil/badebasligil/blob/main/Project/Swift_Playground/IceCrem_Codes))*
 
 <img src="Screenshot 2025-10-19 at 14.57.38.png" width="700"> 
 
-<img src="Screenshot 2025-10-19 at 14.41.46.png" width="500"> 
+<img src="Screenshot 2025-10-19 at 14.41.46.png" width="300"> 
 
 
