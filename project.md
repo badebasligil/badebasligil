@@ -90,3 +90,15 @@
 - *[The Codes](https://github.com/badebasligil/badebasligil/blob/main/Project/Swift_Playground/Clock%3F_Codes)*
 
   <img src="Screenshot 2025-09-04 at 20.57.52.png" width="700"> 
+
+### **[Ice Cream Overflow](Project/Swift_Playground/amınoğlumaraş.swiftpm.zip)**
+
+- *An Ice Cream app that teaches binary and decimal numbers through scoops and overflows*
+
+- *[The Codes](Project/Swift_Playground/IceCrem_Codes)*
+
+<img src="Screenshot 2025-10-19 at 14.57.38.png" width="700"> 
+
+<img src="Screenshot 2025-10-19 at 14.41.46.png" width="500"> 
+
+
