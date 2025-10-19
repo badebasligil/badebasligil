@@ -1,0 +1,150 @@
+import SwiftUI
+
+struct ConeShape: Shape {
+    func path(in rect: CGRect) -> Path {
+        var path = Path()
+        path.move(to: CGPoint(x: rect.midX, y: rect.maxY))
+        path.addLine(to: CGPoint(x: rect.minX, y: rect.minY))
+        path.addLine(to: CGPoint(x: rect.maxX, y: rect.minY))
+        path.closeSubpath()
+        return path
+    }
+}
+struct ContentView: View {
+    @State private var count = 0
+    @State private var scoops: [Color] = []
+    
+    private let availableScoops: [Color] = [.pink, .yellow, .white, .mint, .purple]
+    
+
+    var bits: [Int] {
+        (0..<4).reversed().map { bit in
+            (count >> bit) & 1
+        }
+    }
+    
+    var binaryString: String {
+        bits.map { String($0) }.joined()
+    }
+    
+
+    var body: some View {
+        ZStack {
+            Color.black.ignoresSafeArea()
+            
+            VStack(spacing: 40) {
+                Text("🍦 Binary Ice Cream Counter 🍦")
+                    .foregroundColor(.white)
+                    .font(.title2)
+                    .bold()
+                    .padding(.top, 20)
+                
+
+                HStack(spacing: 20) {
+                    ForEach(Array(zip([8,4,2,1], bits)), id: \.0) { (value, bit) in
+                        VStack(spacing: 8) {
+                            Text("\(value)")
+                                .font(.caption)
+                                .foregroundColor(.white.opacity(0.7))
+                            RoundedRectangle(cornerRadius: 8)
+                                .fill(bit == 1 ? .green : .gray)
+                                .frame(width: 60, height: 60)
+                                .overlay(
+                                    Text("\(bit)")
+                                        .foregroundColor(.white)
+                                        .font(.title2)
+                                        .bold()
+                                )
+                        }
+                    }
+                }
+                
+
+                HStack(spacing: 20) {
+                    ForEach(0..<availableScoops.count, id: \.self) { index in
+                        if index < scoops.count {
+                            Circle()
+                                .fill(scoops[index])
+                                .frame(width: 100, height: 100)
+                                .transition(.scale)
+                                .animation(.spring(), value: scoops)
+                        }
+                    }
+                }
+                .frame(height: 120)
+                
+
+                ConeShape()
+                    .fill(.brown)
+                    .frame(width: 220, height: 100)
+                    .offset(y: -20)
+                
+                VStack(spacing: 8) {
+                    if count > 15 {
+                        Text(" OVERFLOW! ")
+                            .foregroundColor(.red)
+                            .font(.title2)
+                            .bold()
+                    } else {
+                        Text("Decimal: \(count)")
+                            .foregroundColor(.white)
+                            .font(.title2)
+                        Text("Binary: \(binaryString)")
+                            .foregroundColor(.white)
+                            .font(.title3)
+                    }
+                }
+                
+
+                HStack(spacing: 20) {
+                    Button(action: increment) {
+                        Text("Add 1")
+                            .font(.title2)
+                            .padding(.horizontal, 40)
+                            .padding(.vertical, 12)
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(12)
+                    }
+                    
+                    Button(action: reset) {
+                        Text("Reset")
+                            .font(.title2)
+                            .padding(.horizontal, 40)
+                            .padding(.vertical, 12)
+                            .background(Color.red)
+                            .foregroundColor(.white)
+                            .cornerRadius(12)
+                    }
+                }
+                .padding(.bottom, 40)
+            }
+        }
+    }
+        
+    func increment() {
+        if count >= 15 {
+            count = 16 
+        } else {
+            count += 1
+            addScoopIfNeeded()
+        }
+    }
+    
+    func reset() {
+        count = 0
+        scoops.removeAll()
+    }
+    
+    func addScoopIfNeeded() {
+        if scoops.count < availableScoops.count {
+            scoops.append(availableScoops[scoops.count])
+        } else {
+            scoops.removeAll()
+        }
+    }
+}
+
+#Preview {
+    ContentView()
+}
