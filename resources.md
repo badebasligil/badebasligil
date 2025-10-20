@@ -10,6 +10,7 @@
 - *[The code explanation of the calculator app]()*
 - *[The code explanations of all the clock versions]()*
 - *[The code explanation of the ice cream overflow app]()*
+- *[The code explanation of Me with Codes]()*
 
 
  <img src="Screenshot 2025-09-03 at 11.44.14.png" width="500"> 
