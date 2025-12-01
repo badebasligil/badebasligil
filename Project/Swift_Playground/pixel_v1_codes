@@ -1,0 +1,27 @@
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        VStack(spacing: 0) {
+            ForEach(0..<20) { row in
+                HStack(spacing: 0) {
+                    ForEach(0..<20) { col in
+                        Rectangle()
+                            .fill(
+                                (col == 3 && row > 2 && row < 17) ||             // B’nin dik çizgisi
+                                ((row == 5 || row == 4 || row == 8) && col == 5) // B’nin çıkıntıları
+                                ? .blue : .clear
+                            )
+                            .frame(width: 20, height: 20)
+                            .border(.black)
+                    }
+                }
+            }
+        }
+    }
+}
+
+#Preview {
+    ContentView()
+}
+
