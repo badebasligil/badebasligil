@@ -1,0 +1,6 @@
+var grdList = [1,2,2,2,3,4,5,6,7,8]
+print(grdList)
+for i in 0...9{   
+    grdList[i] += 1
+}
+print(grdList)
