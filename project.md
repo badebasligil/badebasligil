@@ -122,4 +122,9 @@
 
   <img src="Screenshot 2025-09-04 at 20.57.52.png" width="700"> 
 
+### **[Learning Lists]()
+
+- *A simple application that calculates the grades a number of students will be in next year after the current grades are given*
+
+- *[The Codes](Project/Swift_Playground/list_learning_codes)
 
