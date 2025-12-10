@@ -93,9 +93,12 @@
 
 <img src="Screenshot 2025-10-19 at 15.44.29.png" width="300"> 
 
-  ### **[Pixel Initial]([Project/Swift_Playground/clock-v?.swiftpm.zip](https://github.com/badebasligil/badebasligil/blob/main/Project/Swift_Playground/pixel_v1_codes))**
+### **[Pixel Initial]([Project/Swift_Playground/clock-v?.swiftpm.zip](https://github.com/badebasligil/badebasligil/blob/main/Project/Swift_Playground/pixel_v1_codes))**
   
   - *[The Codes](Project/Swift_Playground/pixel_v1_codes)*
+
+<img src="Screenshot 2025-12-10 at 21.59.13.png" width="700"> 
+
 
  
 <br>
