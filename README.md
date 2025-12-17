@@ -1,4 +1,4 @@
-**[home](README.md)** | **[projects](project.md)** | **[big ideas](big_ideas.md)** | **[resources](resources.md)** | **[reflections](reflections.md)**
+**[home](README.md)** | **[projects](project.md)** | **[big ideas](big_ideas.md)** | **[resources](resources.md)** | **[reflections](reflections.md)** | **[swift student challange](swiftstudentchallange.md)**
 
 # **![Bade Basligil]()**
 
