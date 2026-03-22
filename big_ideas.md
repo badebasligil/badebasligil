@@ -28,4 +28,4 @@ xxx
 
 ### **4.2 Fault Tolerance More In Depth!!**
 
-
+[The Slideshow](Zeynep Bade BAŞLIGİL - Presentation.pptx)
