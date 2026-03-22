@@ -31,6 +31,6 @@ xxx
 <iframe 
     src="pdfjs/viewer.html?file=Zeynep%20Bade%20BAS%CC%A7LIGI%CC%87L%20-%20Presentation.pdf" 
     width="100%" 
-    height="600px" 
+    height="800px" 
     style="border:1px solid #ccc;">
 </iframe>
