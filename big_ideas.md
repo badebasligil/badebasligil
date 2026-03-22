@@ -28,8 +28,10 @@ xxx
 
 ### **4.2 Fault Tolerance More In Depth!!**
 
+## Bid Idea Presentation
+
 <iframe 
-    src="pdfjs/viewer.html?file=Zeynep%20Bade%20BAS%CC%A7LIGI%CC%87L%20-%20Presentation.pdf" 
+    src="pdfjs/viewer.html?file=https://badebasligil.github.io/badebasligil/Zeynep%20Bade%20BAS%CC%A7LIGI%CC%87L%20-%20Presentation.pdf" 
     width="100%" 
     height="800px" 
     style="border:1px solid #ccc;">
