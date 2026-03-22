@@ -30,4 +30,6 @@ xxx
 
 <iframe 
   src="https://github.com/badebasligil/badebasligil/blob/6840d42bddabe830ffd44b8713986b187415f41b/Zeynep%20Bade%20BAS%CC%A7LIGI%CC%87L%20-%20Presentation.pdf" 
+  width="510"
+  height="280"
 </iframe>
