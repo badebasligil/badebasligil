@@ -20,7 +20,12 @@ Creative Development in AP Computer Science Principles emphasizes collaboration,
 
 ## **Big Idea 3**
 
-Creative Development in AP Computer Science Principles emphasizes collaboration, iterative design, and problem-solving through programming. 
-* Students learn to design user-focused programs, plan and document code, and identify or fix errors. Collaboration with diverse perspectives improves computing innovations, while iterative processes of testing and feedback enhance creativity, functionality, and reliability in program development. 
+## **Big Idea 4**
+
+### **General Summary**
+
+xxx
+
+### **4.2 Fault Tolerance More In Depth!!**
 
 
