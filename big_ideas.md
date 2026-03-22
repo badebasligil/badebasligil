@@ -26,7 +26,7 @@ Creative Development in AP Computer Science Principles emphasizes collaboration,
 
 xxx
 
-### **4.2 Fault Tolerance More In Depth!!**
+### **[4.2 Fault Tolerance More In Depth!!](https://github.com/badebasligil/badebasligil/blob/ea5e8f2dc73f94bf68ef99ca54c1cf36ca8582f1/presentation.pdf)**
 
 <iframe 
     src="pdfjs/viewer.html?file=presentation.pdf" 
