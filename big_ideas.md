@@ -29,7 +29,8 @@ xxx
 ### **4.2 Fault Tolerance More In Depth!!**
 
 <iframe 
-  src="https://github.com/badebasligil/badebasligil/blob/6840d42bddabe830ffd44b8713986b187415f41b/Zeynep%20Bade%20BAS%CC%A7LIGI%CC%87L%20-%20Presentation.pdf" 
-  width="510"
-  height="280">
+    src="pdfjs/viewer.html?file=Zeynep%20Bade%20BAS%CC%A7LIGI%CC%87L%20-%20Presentation.pdf" 
+    width="100%" 
+    height="600px" 
+    style="border:1px solid #ccc;">
 </iframe>
